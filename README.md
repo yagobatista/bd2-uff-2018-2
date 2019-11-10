@@ -52,10 +52,10 @@ Quando se cria, atualiza ou deleta uma instância de InvoiceLine a coluna total 
 
 ### Q2 - Implementar triggers que garantam a validação das regras semânticas criadas
 
-```sh
-mysql -u seu-usuario -p"sua-senha" < Parte2Q2.sql > resultParte2Q2.sql
-```
-
 ### Q3 - Implementar procedimentos armazenados (stored procedures) que garantam a validação das regras semânticas criadas. Nesse caso, o mecanismo de permissões deve ser utilizado para criar um usuário que somente tenha acesso à manipulação dos dados envolvidos através do procedimento definido
 
 ### Q4 - A base original do Chinook possui uma coluna Total na tabela Invoice representada de forma redundante com as informações contidas nas colunas UnitPrice e Quantity na tabela InvoiceLine. Podemos identificar nesse caso uma regra semântica onde o valor Total de um Invoice deve ser igual à soma de UnitPrice * Quantity de todos os registros de InvoiceLine relacionados a um Invoice. Implementar uma solução que garanta a integridade dessa regra
+
+```sh
+mysql -u seu-usuario -p"sua-senha" < Parte2Q4.sql > resultParte2Q4.sql
+```
