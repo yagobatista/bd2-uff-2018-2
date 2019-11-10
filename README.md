@@ -36,7 +36,7 @@ mysql -u seu-usuario -p"sua-senha" < Parte1Q3.sql > resultParte1Q3.sql
 
 ### Q4 - Criar usando a linguagem de programação do SGBD escolhido um script que construa de  forma  dinâmica a  partir  do  catálogo os  comandos  create  table das  tabelas existentes no esquema exemplo considerando  pelo  menos  as  informações  sobre colunas (nome, tipo e obrigatoriedade) e chaves primárias e estrangeiras
 
-#### Comandos para execução da questão 4 
+#### Comandos para execução da questão 4
 
 ```sh
 mysql -u seu-usuario -p"sua-senha" < Parte1Q4.sql > resultParte1Q4.sql
@@ -48,9 +48,13 @@ mysql -u seu-usuario -p"sua-senha" "database-escolhida" -e "show tables" > resul
 
 ### Q1 - Criar regras semânticas, que são regras que não podem ser garantidas pela estrutura do modelo relacional, usando o esquema exemplo fornecido. As regras criadas também devem ser descritas textualmente no trabalho a ser entregue
 
-Quando se cria, atualiza ou deleta uma instância de InvoiceLine a coluna total da Invoice a qual ela está relacionada de ser atualizado de acordo
+* Empregados devem ter no minímo 16 anos
 
 ### Q2 - Implementar triggers que garantam a validação das regras semânticas criadas
+
+```sh
+mysql -u seu-usuario -p"sua-senha" < Parte2Q2.sql
+```
 
 ### Q3 - Implementar procedimentos armazenados (stored procedures) que garantam a validação das regras semânticas criadas. Nesse caso, o mecanismo de permissões deve ser utilizado para criar um usuário que somente tenha acesso à manipulação dos dados envolvidos através do procedimento definido
 
